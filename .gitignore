@@ -1,0 +1,32 @@
+# Dependencias
+node_modules
+npm-debug.log
+yarn-error.log
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist
+build
+.next
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
