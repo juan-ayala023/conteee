@@ -47,14 +47,14 @@ const Hero = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-6"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 w-full"
         >
-          <button className="bg-firs px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-3xl font-black text-lg md:text-2xl italic uppercase tracking-tighter flex items-center gap-3 hover:scale-105 transition-transform glow-orange">
+          <button className="w-full sm:w-auto bg-firs px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-3xl font-black text-lg md:text-2xl italic uppercase tracking-tighter flex items-center justify-center gap-3 hover:scale-105 transition-transform glow-orange">
             <Play className="w-5 h-5 md:w-6 md:h-6 fill-current" />
             ENCENDER
           </button>
 
-          <button className="glass px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-3xl font-black text-lg md:text-2xl italic uppercase tracking-tighter flex items-center gap-3 hover:bg-white/10 transition-all border-white/5">
+          <button className="w-full sm:w-auto glass px-8 py-4 md:px-12 md:py-6 rounded-2xl md:rounded-3xl font-black text-lg md:text-2xl italic uppercase tracking-tighter flex items-center justify-center gap-3 hover:bg-white/10 transition-all border-white/5">
             <TrendingUp className="w-5 h-5 md:w-6 md:h-6" />
             RENDIMIENTO
           </button>

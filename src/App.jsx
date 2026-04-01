@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-obsidian text-white selection:bg-phantom/30">
+    <div className="min-h-screen bg-obsidian text-white selection:bg-phantom/30 overflow-x-hidden w-full max-w-[100vw]">
       {/* Decorative background elements */}
       <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-phantom/10 blur-[120px] rounded-full animate-pulse-slow"></div>
@@ -17,7 +17,7 @@ function App() {
 
       <Navbar />
       
-      <main className="relative pt-20">
+      <main className="relative pt-20 overflow-hidden">
         <Hero />
         <AutomationLoop />
         <FeatureGrid />

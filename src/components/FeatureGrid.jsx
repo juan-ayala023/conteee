@@ -37,7 +37,7 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <section id="features" className="py-16 md:py-24 px-4 md:px-6 relative">
+    <section id="features" className="py-16 md:py-24 px-4 md:px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           <div className="col-span-full mb-8 md:mb-16">
@@ -70,9 +70,9 @@ const FeatureGrid = () => {
         </div>
       </div>
 
-      {/* Decorative side badge */}
-      <div className="hidden lg:block absolute right-[-100px] top-1/2 -translate-y-1/2 rotate-90 opacity-10">
-        <span className="text-[150px] font-display font-black tracking-tighter uppercase whitespace-nowrap">
+      {/* Decorative side badge - hidden on mobile/tablet, clipped on desktop */}
+      <div className="hidden xl:block absolute right-0 top-1/2 -translate-y-1/2 rotate-90 opacity-10 overflow-hidden">
+        <span className="text-[100px] font-display font-black tracking-tighter uppercase whitespace-nowrap">
           SYSTEM_CONTROL
         </span>
       </div>

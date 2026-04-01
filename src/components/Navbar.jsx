@@ -7,7 +7,7 @@ const Navbar = () => {
     <motion.nav 
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="fixed top-0 left-0 w-full z-50 flex justify-center p-6 font-body"
+      className="fixed top-0 left-0 w-full z-50 flex justify-center p-3 md:p-6 font-body"
     >
       <div className="max-w-7xl w-full glass rounded-2xl md:rounded-3xl flex items-center justify-between px-4 py-3 md:px-8 md:py-5 backdrop-blur-xl border-white/5">
         <div className="flex items-center gap-2 md:gap-3">
