@@ -37,10 +37,10 @@ const steps = [
 
 const AutomationLoop = () => {
   return (
-    <section id="automation" className="py-24 px-6 bg-vault/50 relative overflow-hidden">
+    <section id="automation" className="py-16 md:py-24 px-4 md:px-6 bg-vault/50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-7xl font-display font-black mb-6 uppercase tracking-tight italic">
+        <div className="text-center mb-12 md:mb-24">
+          <h2 className="text-3xl md:text-7xl font-display font-black mb-4 md:mb-6 uppercase tracking-tight italic">
             EL BUCLE <span className="text-firs italic">INFINITO</span>
           </h2>
           <p className="text-white/30 max-w-xl mx-auto uppercase tracking-widest text-[10px] font-black">
@@ -48,7 +48,7 @@ const AutomationLoop = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
           {steps.map((step, index) => (
             <motion.div 
               key={index}
@@ -56,15 +56,15 @@ const AutomationLoop = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="glass p-10 rounded-[2.5rem] flex flex-col items-center text-center group hover:scale-[1.02] transition-all duration-500 border-white/5 hover:border-firs/30"
+              className="glass p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] flex flex-col items-center text-center group hover:scale-[1.02] transition-all duration-500 border-white/5 hover:border-firs/30"
             >
-              <div className={`w-20 h-20 rounded-3xl flex items-center justify-center mb-8 
+              <div className={`w-14 h-14 md:w-20 md:h-20 rounded-2xl md:rounded-3xl flex items-center justify-center mb-4 md:mb-8 
                 ${step.color === 'firs' ? 'bg-firs/10 text-firs' : step.color === 'try' ? 'bg-try/10 text-try' : 'bg-white/5 text-white'}
                 group-hover:scale-110 transition-transform duration-500`}
               >
                 {step.icon}
               </div>
-              <h3 className="font-display font-black text-xl mb-4 tracking-tighter uppercase italic">{step.title}</h3>
+              <h3 className="font-display font-black text-lg md:text-xl mb-2 md:mb-4 tracking-tighter uppercase italic">{step.title}</h3>
               <p className="text-white/30 text-xs leading-relaxed uppercase font-black tracking-tighter">
                 {step.desc}
               </p>

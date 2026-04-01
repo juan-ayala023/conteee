@@ -37,11 +37,11 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <section id="features" className="py-24 px-6 relative">
+    <section id="features" className="py-16 md:py-24 px-4 md:px-6 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="col-span-full mb-16">
-            <h2 className="text-4xl md:text-6xl font-display font-black uppercase tracking-tight italic">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="col-span-full mb-8 md:mb-16">
+            <h2 className="text-3xl md:text-6xl font-display font-black uppercase tracking-tight italic">
               TECNOLOGÍA DE <span className="text-try">ÉLITE</span>
             </h2>
             <div className="w-32 h-1 bg-try mt-6"></div>
@@ -54,12 +54,12 @@ const FeatureGrid = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="glass p-12 rounded-[2.5rem] group cursor-default hover:bg-white/[0.04] transition-all duration-500 border-white/5"
+              className="glass p-8 md:p-12 rounded-2xl md:rounded-[2.5rem] group cursor-default hover:bg-white/[0.04] transition-all duration-500 border-white/5"
             >
-              <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 text-white group-hover:text-try transition-colors group-hover:bg-try/10 duration-500">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-white/5 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-8 text-white group-hover:text-try transition-colors group-hover:bg-try/10 duration-500">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-display font-black mb-4 uppercase italic tracking-tighter">
+              <h3 className="text-xl md:text-2xl font-display font-black mb-2 md:mb-4 uppercase italic tracking-tighter">
                 {feature.title}
               </h3>
               <p className="text-white/30 text-xs leading-relaxed font-black uppercase tracking-tighter">
